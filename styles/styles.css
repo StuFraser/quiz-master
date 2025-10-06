@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #3174b2, #89b1f7); /* nice gradient */
+  background: linear-gradient(135deg, #006ead, #89b1f7);
+  /* nice gradient */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,38 +19,110 @@ body {
 
 /* The main quiz container */
 #app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes nav buttons to bottom */
+  align-items: center;
   background: white;
   border-radius: 16px;
   padding: 2rem;
   max-width: 600px;
-  width: 90%; /* responsive */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  text-align: center;
+  width: 90%;
   min-width: 60%;
   min-height: 60%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.setup-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Form wrapper (includes heading + form) */
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* centers the heading over the form */
+}
+
+/* Heading inside the form wrapper */
+.form-wrapper h2 {
+  margin-bottom: 1rem;
+  /* space between heading and form */
+  text-align: center;
+  /* centers text above the form only */
+  color: #006ead;
+}
+
+/* Instructions panel styling */
+.instructions-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f4ff;
+  border-radius: 12px;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 40%;
+}
+
+/* Make the form slightly narrower than instructions panel */
+.generator-form {
+  flex: 1;
+  /* take equal or desired space */
+  max-width: 350px;
+}
+
+/* Optional: adjust headings inside instructions */
+.instructions-panel h3 {
+  color: #006ead;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.indented {
+  /*text-indent: 18px;*/
+  padding-left: 18px;
+  font-size: 14px;
 }
 
 /* Generator form wrapper */
 #app .generator-form {
   display: flex;
-  flex-direction: column; /* stack rows */
+  flex-direction: column;
+  /* stack rows */
   width: 100%;
-  max-width: 400px;       /* keep form compact */
-  margin: 0 auto;         /* center form horizontally in card */
-  vertical-align:middle;
+  max-width: 400px;
+  /* keep form compact */
+  margin: 0 auto;
+  /* center form horizontally in card */
+  vertical-align: middle;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Each row contains label + input */
 #app .generator-form .form-row {
   display: flex;
-  align-items: center;   /* vertically center label + input */
+  align-items: center;
+  /* vertically center label + input */
   justify-content: space-between;
-  gap: 1rem;             /* spacing between label and input */
+  gap: 1rem;
+  /* spacing between label and input */
 }
 
 /* Labels fixed width for alignment */
 #app .generator-form label {
-  flex: 0 0 140px;        /* fixed width for all labels */
+  flex: 0 0 140px;
+  /* fixed width for all labels */
   text-align: right;
   font-weight: bold;
 }
@@ -61,6 +135,17 @@ body {
   border: 1px solid #ccc;
 }
 
+#app .generator-form select {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+}
+
 /* Submit button */
 #app .generator-form button {
   padding: 0.6rem 1.2rem;
@@ -71,7 +156,8 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
-  align-self: center;   /* center button horizontally */
+  align-self: center;
+  /* center button horizontally */
 }
 
 #app .generator-form button:hover {
@@ -95,3 +181,52 @@ h1 {
     0 0 80px #0ff;
 }
 
+h2 {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1; /* fill available vertical space */
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 30px;
+}
+
+
+.question-image {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-button img {
+  display: block;
+  width: 50px;
+  /* fixed image size inside button */
+  height: 50px;
+}
