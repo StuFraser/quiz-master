@@ -2,6 +2,7 @@ import { renderSetupForm } from "./setupform.js";
 import { quizTopics, getQuizQuestions, createResponseArray } from "./functions/QuizFunctions.js";
 import { saveSessionVar, getSessionVar } from "./functions/StateManager.js";
 import { renderQuestion } from "./questionform.js";
+import { renderResults } from "./resultsForm.js";
 
 const init = () => {
   renderSetupForm(quizTopics(), ({ topicId, numQuestions, numAnswers }) => {
@@ -37,7 +38,8 @@ const init = () => {
     const handleFinish = () => {
       console.log("Quiz complete!");
       console.log("Responses:", getSessionVar("response"));
-      alert("Quiz finished! Check console for results.");
+      //alert("Quiz finished! Check console for results.");
+      renderResults(getSessionVar("quiz") ,getSessionVar("response"));
     };
 
     const renderCurrentQuestion = () => {
