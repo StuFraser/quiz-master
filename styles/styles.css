@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3174b2, #89b1f7); /* nice gradient */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The main quiz container */
+#app {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%; /* responsive */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-width: 60%;
+  min-height: 60%;
+}
+
+/* Generator form wrapper */
+#app .generator-form {
+  display: flex;
+  flex-direction: column; /* stack rows */
+  width: 100%;
+  max-width: 400px;       /* keep form compact */
+  margin: 0 auto;         /* center form horizontally in card */
+  vertical-align:middle;
+}
+
+/* Each row contains label + input */
+#app .generator-form .form-row {
+  display: flex;
+  align-items: center;   /* vertically center label + input */
+  justify-content: space-between;
+  gap: 1rem;             /* spacing between label and input */
+}
+
+/* Labels fixed width for alignment */
+#app .generator-form label {
+  flex: 0 0 140px;        /* fixed width for all labels */
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Inputs grow to fill remaining space */
+#app .generator-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button */
+#app .generator-form button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #3174b2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: center;   /* center button horizontally */
+}
+
+#app .generator-form button:hover {
+  background: #6a11cb;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #3174b2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 20px;
+
+  /* Neon glow effect */
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
+}
+
