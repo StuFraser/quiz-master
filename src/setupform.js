@@ -17,11 +17,10 @@ export function renderSetupForm(quizTopics, onSubmit) {
           <label for="numAnswers">Answers per Question:</label>
           <input type="number" name="numAnswers" id="numAnswers" value="4" min="2" max="6" required />
         </div>
-        <button type="submit">Generate Quiz</button>
+        <button type="submit" class="control-button">Generate Quiz</button>
       </form>
     </div>
-
-      <div class="instructions-panel">
+    <div class="instructions-panel">
         <h3>How to Use Quiz Master</h3>
         <h4>1. Choose a topic from the dropdown.</h4>
         <p class="indented">Use the dropdown menu to pick the quiz topic you’d like to try.</p>
@@ -37,9 +36,9 @@ export function renderSetupForm(quizTopics, onSubmit) {
             ❌ Any answers you got wrong </br>
             💯 Your total score
           </p>
-      </div>
     </div>
-    </div>
+  </div>
+  </div>
   `;
 
   // Populate topic select

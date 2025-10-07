@@ -10,21 +10,29 @@ const init = () => {
     const quiz = getQuizQuestions(topicId, numQuestions, numAnswers);
     saveSessionVar("quiz", quiz);
     saveSessionVar("response", createResponseArray(quiz.map(q => q.id)));
+    saveSessionVar("questionCount", numQuestions);
+    saveSessionVar("answerCount", numAnswers);
 
     // --- STATE ---
     let currentIndex = 0;
 
     // --- HANDLERS ---
-    const handleNextQuestion = (questionId, answerId) => {
+    const handleNextQuestion = (selectedAnswerId) => {
+      if (selectedAnswerId == null) return alert("Please select an answer!");
+
       const response = getSessionVar("response");
-      const r = response.find(q => q.questionId === questionId);
-      console.log(`QuestionId: ${questionId} - AnswerId: ${answerId}`);
-      //console.log("Response Array: ", response);
-      r.answerId = answerId;
+      const currentQuestion = quiz[currentIndex];
+      const r = response.find(q => q.questionId === currentQuestion.id);
+      r.answerId = selectedAnswerId;
       saveSessionVar("response", response);
-      currentIndex++;
-      renderCurrentQuestion();
-    }
+
+      if (currentIndex === quiz.length - 1) {
+        renderResults(quiz, response, numQuestions, numAnswers, init);
+      } else {
+        currentIndex++;
+        renderCurrentQuestion();
+      }
+    };
 
     const handlePrevQuestion = (questionId, answerId) => {
       const response = getSessionVar("response");
@@ -34,13 +42,6 @@ const init = () => {
       currentIndex--;
       renderCurrentQuestion();
     }
-
-    const handleFinish = () => {
-      console.log("Quiz complete!");
-      console.log("Responses:", getSessionVar("response"));
-      //alert("Quiz finished! Check console for results.");
-      renderResults(getSessionVar("quiz") ,getSessionVar("response"));
-    };
 
     const renderCurrentQuestion = () => {
       const quiz = getSessionVar("quiz");
@@ -55,7 +56,6 @@ const init = () => {
         r.answerId,
         handleNextQuestion,
         handlePrevQuestion,
-        handleFinish
       );
     };
 
