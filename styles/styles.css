@@ -21,7 +21,8 @@ body {
 #app {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* pushes nav buttons to bottom */
+  justify-content: space-between;
+  /* pushes nav buttons to bottom */
   align-items: center;
   background: white;
   border-radius: 16px;
@@ -29,9 +30,11 @@ body {
   max-width: 600px;
   width: 90%;
   min-width: 60%;
-  min-height: 60%;
-  max-height: 80vh;
+  min-height: 70vh;
+  max-height: 90vh;
+  overflow-y: auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: height 0.3s ease;
 }
 
 .setup-container {
@@ -74,14 +77,11 @@ body {
   width: 40%;
 }
 
-/* Make the form slightly narrower than instructions panel */
 .generator-form {
   flex: 1;
-  /* take equal or desired space */
   max-width: 350px;
 }
 
-/* Optional: adjust headings inside instructions */
 .instructions-panel h3 {
   color: #006ead;
   margin-bottom: 0.5rem;
@@ -89,7 +89,6 @@ body {
 }
 
 .indented {
-  /*text-indent: 18px;*/
   padding-left: 18px;
   font-size: 14px;
 }
@@ -98,12 +97,9 @@ body {
 #app .generator-form {
   display: flex;
   flex-direction: column;
-  /* stack rows */
   width: 100%;
   max-width: 400px;
-  /* keep form compact */
   margin: 0 auto;
-  /* center form horizontally in card */
   vertical-align: middle;
   gap: 1rem;
   padding-top: 1rem;
@@ -190,7 +186,8 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex: 1; /* fill available vertical space */
+  flex: 1;
+  /* fill available vertical space */
   position: relative;
 }
 
@@ -258,14 +255,18 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%; /* fill #app height */
-  overflow: hidden; /* prevent scrollbars on container itself */
+  height: 100%;
+  /* fill #app height */
+  overflow: hidden;
+  /* prevent scrollbars on container itself */
 }
 
 .results-scroll-area {
-  flex: 1;                   /* take up remaining height */
+  flex: 1;
+  /* take up remaining height */
   overflow-y: auto;
   margin: 1rem 0;
-  padding-right: 0.5rem;     /* space for scrollbar */
-   width: 100%;
+  padding-right: 0.5rem;
+  /* space for scrollbar */
+  width: 100%;
 }
