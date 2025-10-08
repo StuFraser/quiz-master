@@ -12,9 +12,28 @@ export function renderQuestion(
   const container = document.createElement("div");
   container.className = "question-form";
 
+  const questionIndex = document.createElement("h3");
+  questionIndex.className = ""
+  questionIndex.textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
+  container.appendChild(questionIndex);
+
   const questionText = document.createElement("h2");
-  questionText.textContent = `Q${currentIndex + 1}. ${question.question}`;
+  questionText.textContent = question.question;
   container.appendChild(questionText);
+
+  //console.log("question: ", question);
+
+  if (question.image) {
+
+    //console.log(question.image)
+
+    const questionImage = document.createElement("img"); 
+    questionImage.src = question.image;                 
+    questionImage.alt = "Question image";               
+    questionImage.className = "question-image";        
+
+    container.appendChild(questionImage);
+  }
 
   const answersWrapper = document.createElement("div");
   answersWrapper.className = "answers";
@@ -41,12 +60,15 @@ export function renderQuestion(
   if (currentIndex > 0) {
     const prevBtn = document.createElement("button");
     //prevBtn.textContent = "Previous";
-    
     prevBtn.className = "nav-button";
     prevBtn.addEventListener("click", () => {
       const selected = parseInt(document.querySelector('input[name="answer"]:checked')?.value, 10);
       onPrev(selected);
     });
+    const img = document.createElement("img");
+    img.src = "../assets/back.png";
+    img.alt = "Next";
+    prevBtn.appendChild(img);
     nav.appendChild(prevBtn);
   }
 
@@ -54,11 +76,9 @@ export function renderQuestion(
   //nextBtn.textContent = currentIndex === totalQuestions - 1 ? "Finish" : "Next";
   const img = document.createElement("img");
   if (currentIndex === totalQuestions - 1) {
-
     img.src = "../assets/finish.png";
     img.alt = "Finish";
   } else {
-    const img = document.createElement("img");
     img.src = "../assets/next.png";
     img.alt = "Next";
   }

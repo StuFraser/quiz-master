@@ -191,6 +191,24 @@ h2 {
   flex-direction: column;
   width: 100%;
   flex: 1; /* fill available vertical space */
+  position: relative;
+}
+
+.question-form h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-style: italic;
+  color: #006ead;
+}
+
+.question-image {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  margin: 1rem auto;
 }
 
 .answers {
@@ -222,6 +240,8 @@ h2 {
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
+  border-width: 0;
+  background: transparent;
 }
 
 .nav-button img {
@@ -229,6 +249,7 @@ h2 {
   width: 50px;
   /* fixed image size inside button */
   height: 50px;
+  border-width: 0;
 }
 
 .results-container {

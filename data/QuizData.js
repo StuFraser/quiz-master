@@ -1054,7 +1054,7 @@ const flagQuestions = [
     id: 0,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    image: "../assets/flags/France.png",
     answers: [
       { id: 0, answer: "France", correct: true },
       { id: 1, answer: "Italy", correct: false },
@@ -1067,7 +1067,7 @@ const flagQuestions = [
     id: 1,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+    image: "../assets/flags/India.png",
     answers: [
       { id: 0, answer: "India", correct: true },
       { id: 1, answer: "Pakistan", correct: false },
@@ -1080,7 +1080,7 @@ const flagQuestions = [
     id: 2,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+    image: "../assets/flags/Germany.png",
     answers: [
       { id: 0, answer: "Germany", correct: true },
       { id: 1, answer: "Belgium", correct: false },
@@ -1093,7 +1093,7 @@ const flagQuestions = [
     id: 3,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    image: "../assets/flags/usa.png",
     answers: [
       { id: 0, answer: "United States", correct: true },
       { id: 1, answer: "United Kingdom", correct: false },
@@ -1106,7 +1106,7 @@ const flagQuestions = [
     id: 4,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+    image: "../assets/flags/Brazil.png",
     answers: [
       { id: 0, answer: "Brazil", correct: true },
       { id: 1, answer: "Argentina", correct: false },
@@ -1119,7 +1119,7 @@ const flagQuestions = [
     id: 5,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
+    image: "../assets/flags/Russia.png",
     answers: [
       { id: 0, answer: "Russia", correct: true },
       { id: 1, answer: "Slovakia", correct: false },
@@ -1132,7 +1132,7 @@ const flagQuestions = [
     id: 6,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
+    image: "../assets/flags/Spain.png",
     answers: [
       { id: 0, answer: "Spain", correct: true },
       { id: 1, answer: "Portugal", correct: false },
@@ -1145,7 +1145,7 @@ const flagQuestions = [
     id: 7,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
+    image: "../assets/flags/Italy.png",
     answers: [
       { id: 0, answer: "Italy", correct: true },
       { id: 1, answer: "Mexico", correct: false },
@@ -1158,7 +1158,7 @@ const flagQuestions = [
     id: 8,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_South_Korea.svg",
+    image: "../assets/flags/South_Korea.png",
     answers: [
       { id: 0, answer: "South Korea", correct: true },
       { id: 1, answer: "North Korea", correct: false },
@@ -1171,7 +1171,7 @@ const flagQuestions = [
     id: 9,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+    image: "../assets/flags/Japan.png",
     answers: [
       { id: 0, answer: "Japan", correct: true },
       { id: 1, answer: "South Korea", correct: false },
@@ -1184,7 +1184,7 @@ const flagQuestions = [
     id: 10,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Canada#/media/File:Flag_of_Canada_(Pantone).svg",
+    image: "../assets/flags/Canada.png",
     answers: [
       { id: 0, answer: "Canada", correct: true },
       { id: 1, answer: "United States", correct: false },
@@ -1197,7 +1197,7 @@ const flagQuestions = [
     id: 11,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/United_Kingdom#/media/File:Flag_of_the_United_Kingdom_(1-2).svg",
+    image: "../assets/flags/United_Kingdom.png",
     answers: [
       { id: 0, answer: "United Kingdom", correct: true },
       { id: 1, answer: "Australia", correct: false },
@@ -1210,7 +1210,7 @@ const flagQuestions = [
     id: 12,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Australia#/media/File:Flag_of_Australia_(converted).svg",
+    image: "../assets/flags/Australia.svg",
     answers: [
       { id: 0, answer: "Australia", correct: true },
       { id: 1, answer: "New Zealand", correct: false },
@@ -1223,7 +1223,7 @@ const flagQuestions = [
     id: 13,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Finland#/media/File:Flag_of_Finland.svg",
+    image: "../assets/flags/Finland.png",
     answers: [
       { id: 0, answer: "Finland", correct: true },
       { id: 1, answer: "Sweden", correct: false },
@@ -1236,7 +1236,7 @@ const flagQuestions = [
     id: 14,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/China#/media/File:Flag_of_the_People's_Republic_of_China.svg",
+    image: "../assets/flags/china.png",
     answers: [
       { id: 0, answer: "China", correct: true },
       { id: 1, answer: "Vietnam", correct: false },
@@ -1249,7 +1249,7 @@ const flagQuestions = [
     id: 15,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Mexico#/media/File:Flag_of_Mexico.svg",
+    image: "../assets/flags/Mexico.png",
     answers: [
       { id: 0, answer: "Mexico", correct: true },
       { id: 1, answer: "Italy", correct: false },
@@ -1262,7 +1262,7 @@ const flagQuestions = [
     id: 16,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/South_Africa#/media/File:Flag_of_South_Africa.svg",
+    image: "../assets/flags/South_Africa.png",
     answers: [
       { id: 0, answer: "South Africa", correct: true },
       { id: 1, answer: "Kenya", correct: false },
@@ -1275,7 +1275,7 @@ const flagQuestions = [
     id: 17,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Israel#/media/File:Flag_of_Israel.svg",
+    image: "../assets/flags/Israel.png",
     answers: [
       { id: 0, answer: "Israel", correct: true },
       { id: 1, answer: "Greece", correct: false },
@@ -1288,7 +1288,7 @@ const flagQuestions = [
     id: 18,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Switzerland#/media/File:Flag_of_Switzerland_(Pantone).svg",
+    image: "../assets/flags/Switzerland.png",
     answers: [
       { id: 0, answer: "Switzerland", correct: true },
       { id: 1, answer: "Denmark", correct: false },
@@ -1301,7 +1301,7 @@ const flagQuestions = [
     id: 19,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "https://en.wikipedia.org/wiki/Greece#/media/File:Flag_of_Greece.svg",
+    image: "../assets/flags/Greece.png",
     answers: [
       { id: 0, answer: "Greece", correct: true },
       { id: 1, answer: "Israel", correct: false },

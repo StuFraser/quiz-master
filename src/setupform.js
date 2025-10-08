@@ -25,7 +25,7 @@ export function renderSetupForm(quizTopics, onSubmit) {
         <h4>1. Choose a topic from the dropdown.</h4>
         <p class="indented">Use the dropdown menu to pick the quiz topic you’d like to try.</p>
         <h4>2. Set Your Preferences</h4>
-        <p class="indented">Enter how many questions you want and how many answer options each question should have.</p>
+        <p class="indented">Enter how many questions you want and how many answer options each question should have.  The more answers, the better you score</p>
         <h4>3. Click "Generate Quiz" to start.</h4>
         <p class="indented"> Each question will appear one at a time — read carefully and select your answer. </p>
         <h4>4. Navigate questions with the next/back buttons.</h4>

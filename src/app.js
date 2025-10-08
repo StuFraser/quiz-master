@@ -18,7 +18,9 @@ const init = () => {
 
     // --- HANDLERS ---
     const handleNextQuestion = (selectedAnswerId) => {
-      if (selectedAnswerId == null) return alert("Please select an answer!");
+      if (selectedAnswerId == null || isNaN(selectedAnswerId)) {
+        return alert("Please select an answer!");
+      }
 
       const response = getSessionVar("response");
       const currentQuestion = quiz[currentIndex];
@@ -27,21 +29,26 @@ const init = () => {
       saveSessionVar("response", response);
 
       if (currentIndex === quiz.length - 1) {
-        renderResults(quiz, response, numQuestions, numAnswers, init);
+        renderResults(quiz, response, handleRestart);
       } else {
         currentIndex++;
         renderCurrentQuestion();
       }
     };
 
-    const handlePrevQuestion = (questionId, answerId) => {
-      const response = getSessionVar("response");
-      const r = response.find(q => q.questionId === questionId)
-      r.answerId = answerId;
-      saveSessionVar("response", response);
-      currentIndex--;
-      renderCurrentQuestion();
+    const handlePrevQuestion = () => {
+      // Move to previous question
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderCurrentQuestion();
+      }
     }
+
+    const handleRestart = () => {
+      currentIndex = 0;
+      saveSessionVar("response", []);
+      init();
+    };
 
     const renderCurrentQuestion = () => {
       const quiz = getSessionVar("quiz");

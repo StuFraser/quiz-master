@@ -6,7 +6,7 @@ export const quizTopics = () => {
 
 export const createResponseArray = (questionIds) => {
     const responseArray = [];
-    questionIds.forEach(qId =>{
+    questionIds.forEach(qId => {
         responseArray.push({
             questionId: qId,
             answerId: null
@@ -42,4 +42,29 @@ export const getQuizQuestions = (topicId, numQuestions, numAnswers) => {
         q.answers = questionAnswers.sort(() => 0.5 - Math.random());
     });
     return selectedQuestions;
+}
+
+export const calculateScore = (quiz, responses, numAnswers) => {
+    let rawPoints = 0;
+    let maxPoints = 0;
+
+    quiz.forEach(q => {
+        const questionPoints = (numAnswers - 1) / 2;
+        maxPoints += questionPoints;
+
+        const response = responses.find(r => r.questionId === q.id);
+        if (response) {
+            const answer = q.answers.find(a => a.id === response.answerId);
+            if (answer && answer.correct) {
+                rawPoints += questionPoints;
+            }
+        }
+    });
+
+    console.log("rawPoints: ", rawPoints)
+    console.log("maxPoints: ", maxPoints)
+
+    // Scale to 100
+    const scaledScore = (rawPoints / maxPoints) * 100;
+    return Math.round(scaledScore);
 }
