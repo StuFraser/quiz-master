@@ -1210,7 +1210,7 @@ const flagQuestions = [
     id: 12,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Australia.svg",
+    image: "../assets/flags/Australia.png",
     answers: [
       { id: 0, answer: "Australia", correct: true },
       { id: 1, answer: "New Zealand", correct: false },

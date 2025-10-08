@@ -206,7 +206,8 @@ h2 {
 
 .question-image {
   display: block;
-  max-width: 40%;
+  width: auto;
+  max-height: 30%;
   height: auto;
   margin: 1rem auto;
 }
