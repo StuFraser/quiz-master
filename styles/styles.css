@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  font-family: Outfit, sans-serif;
 }
 
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #006ead, #89b1f7);
+
   /* nice gradient */
   height: 100vh;
   display: flex;
@@ -22,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   /* pushes nav buttons to bottom */
   align-items: center;
   background: white;
@@ -33,7 +35,7 @@ body {
   min-height: 70vh;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
   transition: height 0.3s ease;
   position: relative;
 }
@@ -51,14 +53,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   /* centers the heading over the form */
+}
+
+h2 {
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 /* Heading inside the form wrapper */
 .form-wrapper h2 {
   margin-bottom: 1rem;
+
   /* space between heading and form */
   text-align: center;
+
   /* centers text above the form only */
   color: #006ead;
 }
@@ -73,7 +83,7 @@ body {
   padding: 1rem;
   font-size: 0.95rem;
   line-height: 1.4;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
   text-align: left;
   width: 40%;
 }
@@ -111,15 +121,18 @@ body {
 #app .generator-form .form-row {
   display: flex;
   align-items: center;
+
   /* vertically center label + input */
   justify-content: space-between;
   gap: 1rem;
+
   /* spacing between label and input */
 }
 
 /* Labels fixed width for alignment */
 #app .generator-form label {
   flex: 0 0 140px;
+
   /* fixed width for all labels */
   text-align: right;
   font-weight: bold;
@@ -178,18 +191,15 @@ h1 {
     0 0 80px #0ff;
 }
 
-h2 {
-  padding-bottom: 30px;
-  padding-top: 20px;
-}
-
 .question-form {
   display: flex;
   flex-direction: column;
   width: 100%;
   flex: 1;
+
   /* fill available vertical space */
   position: relative;
+  padding-top: 2rem;
 }
 
 .question-form h3 {
@@ -202,12 +212,25 @@ h2 {
   color: #006ead;
 }
 
+.question-index {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem; /* space below the index */
+}
+
+.question-text {
+  font-size: 1.5rem;
+  margin-top: 0;      /* remove default h2 margin if needed */
+  margin-bottom: 1rem; /* space below question text */
+  overflow-wrap: break-word; /* ensures long text wraps */
+  line-height: 1.4;  /* better readability */
+}
+
 .question-image {
   display: block;
-  width: auto;
-  max-height: 30%;
+  max-width: 300px;
   height: auto;
-  margin: 1rem auto;
+  margin: 10px 0;
+  border: 1px solid #ccc;
 }
 
 .answers {
@@ -217,14 +240,11 @@ h2 {
   padding-left: 30px;
 }
 
-
-.question-image {
-  display: block;
-  max-width: 300px;
-  height: auto;
-  margin: 10px 0;
-  border: 1px solid #ccc;
+.answers input[type="radio"] {
+  margin-right: 0.5rem; /* space between radio and text */
+  transform: scale(1.2); /* optional: make buttons slightly bigger */
 }
+
 
 .button-container {
   position: absolute;
@@ -251,6 +271,7 @@ h2 {
 .nav-button img {
   display: block;
   width: 50px;
+
   /* fixed image size inside button */
   height: 50px;
   border-width: 0;
@@ -262,17 +283,21 @@ h2 {
   align-items: center;
   width: 100%;
   height: 100%;
+
   /* fill #app height */
   overflow: hidden;
+
   /* prevent scrollbars on container itself */
 }
 
 .results-scroll-area {
   flex: 1;
+
   /* take up remaining height */
   overflow-y: auto;
   margin: 1rem 0;
   padding-right: 0.5rem;
+
   /* space for scrollbar */
   width: 100%;
 }
