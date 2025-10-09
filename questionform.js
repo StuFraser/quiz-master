@@ -67,8 +67,8 @@ export function renderQuestion(
       onPrev(selected);
     });
     const img = document.createElement("img");
-    img.src = "../assets/back.png";
-    img.alt = "Next";
+    img.src = "./assets/back.png";
+    img.alt = "Previous";
     prevBtn.appendChild(img);
     nav.appendChild(prevBtn);
   }
@@ -77,10 +77,10 @@ export function renderQuestion(
   //nextBtn.textContent = currentIndex === totalQuestions - 1 ? "Finish" : "Next";
   const img = document.createElement("img");
   if (currentIndex === totalQuestions - 1) {
-    img.src = "../assets/finish.png";
+    img.src = "./assets/finish.png";
     img.alt = "Finish";
   } else {
-    img.src = "../assets/next.png";
+    img.src = "./assets/next.png";
     img.alt = "Next";
   }
   nextBtn.appendChild(img);
