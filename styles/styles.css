@@ -228,9 +228,12 @@ h1 {
 .question-image {
   display: block;
   max-width: 300px;
+  max-height: 180px; /* new: limit tallest images */
+  width: auto;       /* allow width to scale proportionally */
   height: auto;
   margin: 10px 0;
   border: 1px solid #ccc;
+  object-fit: contain; /* optional: preserve aspect ratio inside max-height */
 }
 
 .answers {
@@ -238,11 +241,6 @@ h1 {
   flex-direction: column;
   gap: 1rem;
   padding-left: 30px;
-}
-
-.answers input[type="radio"] {
-  margin-right: 0.5rem; /* space between radio and text */
-  transform: scale(1.2); /* optional: make buttons slightly bigger */
 }
 
 
