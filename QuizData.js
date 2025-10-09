@@ -1054,7 +1054,7 @@ const flagQuestions = [
     id: 0,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/France.png",
+    image: "./assets/flags/France.png",
     answers: [
       { id: 0, answer: "France", correct: true },
       { id: 1, answer: "Italy", correct: false },
@@ -1067,7 +1067,7 @@ const flagQuestions = [
     id: 1,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/India.png",
+    image: "./assets/flags/India.png",
     answers: [
       { id: 0, answer: "India", correct: true },
       { id: 1, answer: "Pakistan", correct: false },
@@ -1080,7 +1080,7 @@ const flagQuestions = [
     id: 2,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Germany.png",
+    image: "./assets/flags/Germany.png",
     answers: [
       { id: 0, answer: "Germany", correct: true },
       { id: 1, answer: "Belgium", correct: false },
@@ -1093,7 +1093,7 @@ const flagQuestions = [
     id: 3,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/usa.png",
+    image: "./assets/flags/usa.png",
     answers: [
       { id: 0, answer: "United States", correct: true },
       { id: 1, answer: "United Kingdom", correct: false },
@@ -1106,7 +1106,7 @@ const flagQuestions = [
     id: 4,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Brazil.png",
+    image: "./assets/flags/Brazil.png",
     answers: [
       { id: 0, answer: "Brazil", correct: true },
       { id: 1, answer: "Argentina", correct: false },
@@ -1119,7 +1119,7 @@ const flagQuestions = [
     id: 5,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Russia.png",
+    image: "./assets/flags/Russia.png",
     answers: [
       { id: 0, answer: "Russia", correct: true },
       { id: 1, answer: "Slovakia", correct: false },
@@ -1132,7 +1132,7 @@ const flagQuestions = [
     id: 6,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Spain.png",
+    image: "./assets/flags/Spain.png",
     answers: [
       { id: 0, answer: "Spain", correct: true },
       { id: 1, answer: "Portugal", correct: false },
@@ -1145,7 +1145,7 @@ const flagQuestions = [
     id: 7,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Italy.png",
+    image: "./assets/flags/Italy.png",
     answers: [
       { id: 0, answer: "Italy", correct: true },
       { id: 1, answer: "Mexico", correct: false },
@@ -1158,7 +1158,7 @@ const flagQuestions = [
     id: 8,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/South_Korea.png",
+    image: "./assets/flags/South_Korea.png",
     answers: [
       { id: 0, answer: "South Korea", correct: true },
       { id: 1, answer: "North Korea", correct: false },
@@ -1171,7 +1171,7 @@ const flagQuestions = [
     id: 9,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Japan.png",
+    image: "./assets/flags/Japan.png",
     answers: [
       { id: 0, answer: "Japan", correct: true },
       { id: 1, answer: "South Korea", correct: false },
@@ -1184,7 +1184,7 @@ const flagQuestions = [
     id: 10,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Canada.png",
+    image: "./assets/flags/Canada.png",
     answers: [
       { id: 0, answer: "Canada", correct: true },
       { id: 1, answer: "United States", correct: false },
@@ -1197,7 +1197,7 @@ const flagQuestions = [
     id: 11,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/United_Kingdom.png",
+    image: "./assets/flags/United_Kingdom.png",
     answers: [
       { id: 0, answer: "United Kingdom", correct: true },
       { id: 1, answer: "Australia", correct: false },
@@ -1210,7 +1210,7 @@ const flagQuestions = [
     id: 12,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Australia.png",
+    image: "./assets/flags/Australia.png",
     answers: [
       { id: 0, answer: "Australia", correct: true },
       { id: 1, answer: "New Zealand", correct: false },
@@ -1223,7 +1223,7 @@ const flagQuestions = [
     id: 13,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Finland.png",
+    image: "./assets/flags/Finland.png",
     answers: [
       { id: 0, answer: "Finland", correct: true },
       { id: 1, answer: "Sweden", correct: false },
@@ -1236,7 +1236,7 @@ const flagQuestions = [
     id: 14,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/china.png",
+    image: "./assets/flags/china.png",
     answers: [
       { id: 0, answer: "China", correct: true },
       { id: 1, answer: "Vietnam", correct: false },
@@ -1249,7 +1249,7 @@ const flagQuestions = [
     id: 15,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Mexico.png",
+    image: "./assets/flags/Mexico.png",
     answers: [
       { id: 0, answer: "Mexico", correct: true },
       { id: 1, answer: "Italy", correct: false },
@@ -1262,7 +1262,7 @@ const flagQuestions = [
     id: 16,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/South_Africa.png",
+    image: "./assets/flags/South_Africa.png",
     answers: [
       { id: 0, answer: "South Africa", correct: true },
       { id: 1, answer: "Kenya", correct: false },
@@ -1275,7 +1275,7 @@ const flagQuestions = [
     id: 17,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Israel.png",
+    image: "./assets/flags/Israel.png",
     answers: [
       { id: 0, answer: "Israel", correct: true },
       { id: 1, answer: "Greece", correct: false },
@@ -1288,7 +1288,7 @@ const flagQuestions = [
     id: 18,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Switzerland.png",
+    image: "./assets/flags/Switzerland.png",
     answers: [
       { id: 0, answer: "Switzerland", correct: true },
       { id: 1, answer: "Denmark", correct: false },
@@ -1301,7 +1301,7 @@ const flagQuestions = [
     id: 19,
     topicId: 'E',
     question: "Which country does this flag belong to?",
-    image: "../assets/flags/Greece.png",
+    image: "./assets/flags/Greece.png",
     answers: [
       { id: 0, answer: "Greece", correct: true },
       { id: 1, answer: "Israel", correct: false },
