@@ -1,0 +1,14 @@
+{
+  "esversion": 11,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "unused": true,
+  "browser":true,
+  "globals": {
+    "window": true,
+    "document": true,
+    "console":true,
+    "alert":true
+  }
+}
