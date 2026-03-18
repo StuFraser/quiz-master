@@ -8,7 +8,7 @@ The UI is rendered dynamically through JavaScript, with content injected into th
 
 - Select quiz topic, number of questions, and number of answer options per question
 - Navigate through questions with Next/Back buttons
-- Image support for visual questions — includes country flag identification quizzes
+- Image support for visual questions — includes a country flags category where a flag is displayed and you identify the country
 
 ## Tech Stack
 
